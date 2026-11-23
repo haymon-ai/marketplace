@@ -1,0 +1,23 @@
+name: Validate
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  validate:
+    name: Marketplace
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      # Claude Code exact-pinned; bump by hand.
+      - run: npx -y @anthropic-ai/claude-code@2.1.330 plugin validate --strict .
+      - run: jq empty .agents/plugins/marketplace.json

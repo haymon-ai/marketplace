@@ -1,0 +1,28 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "haymon-ai",
+  "description": "Haymon AI plugins for Claude Code and Codex",
+  "owner": {
+    "name": "Haymon AI",
+    "url": "https://github.com/haymon-ai"
+  },
+  "plugins": [
+    {
+      "name": "dbmcp",
+      "description": "The privacy first MCP server for SQL databases.",
+      "author": {
+        "name": "Haymon AI",
+        "url": "https://github.com/haymon-ai"
+      },
+      "homepage": "https://dbmcp.haymon.ai",
+      "repository": "https://github.com/haymon-ai/dbmcp",
+      "license": "MIT",
+      "source": {
+        "source": "git-subdir",
+        "url": "haymon-ai/dbmcp",
+        "path": "plugins/dbmcp",
+        "ref": "released"
+      }
+    }
+  ]
+}
