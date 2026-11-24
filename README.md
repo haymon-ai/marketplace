@@ -16,11 +16,11 @@ codex plugin marketplace add haymon-ai/marketplace
 
 | Plugin | Description | Install | Source |
 |---|---|---|---|
-| `dbmcp` | The privacy first MCP server for SQL databases, with `explore`, `setup`, and `privacy` skills | `dbmcp@haymon-ai` | [`haymon-ai/dbmcp` › `plugins/dbmcp`](https://github.com/haymon-ai/dbmcp/tree/released/plugins/dbmcp) |
+| `dbmcp` | The privacy first MCP server for SQL databases, with `setup` and `privacy` skills | `dbmcp@haymon-ai` | [`haymon-ai/dbmcp` › `plugins/dbmcp`](https://github.com/haymon-ai/dbmcp/tree/master/plugins/dbmcp) |
 
 Install with `/plugin install dbmcp@haymon-ai` (Claude Code) or `codex plugin add dbmcp@haymon-ai` (Codex).
 
-Each entry tracks its plugin repository's `released` branch, which moves only when a release is published, so you get released versions only.
+Each entry tracks its plugin repository's `master` branch.
 
 ## License
 
