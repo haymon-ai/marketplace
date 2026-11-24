@@ -21,7 +21,7 @@
         "source": "git-subdir",
         "url": "haymon-ai/dbmcp",
         "path": "plugins/dbmcp",
-        "ref": "released"
+        "ref": "master"
       }
     }
   ]
